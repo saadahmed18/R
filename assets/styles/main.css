@@ -8,6 +8,9 @@
   --dark-gunmetal: #212529;
   --platinum: #dee2e6;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   padding: 0 15px;
   margin: auto;
@@ -25,5 +28,74 @@
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  background-color: var(--dark-gunmetal);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo a {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--white);
+}
+nav ul li a {
+  color: var(--white);
+}
+@media (max-width: 991px) {
+  nav {
+    position: relative;
+  }
+  nav label img {
+    cursor: pointer;
+  }
+  nav input {
+    appearance: none;
+  }
+  nav input:checked + ul {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    width: 250px;
+    background-color: var(--dark-gunmetal);
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px 25px;
+  }
+  nav ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.377);
+  }
+}
+@media (min-width: 992px) {
+  nav label,
+  nav input {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li a {
+    padding: 0 20px;
   }
 }
