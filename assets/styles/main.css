@@ -7,6 +7,8 @@
   --white: #ffffff;
   --dark-gunmetal: #212529;
   --platinum: #dee2e6;
+  --gray: #808080;
+  --black: #000000;
 }
 html {
   scroll-behavior: smooth;
@@ -38,6 +40,9 @@ ul {
 }
 a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
 }
 header {
   position: sticky;
@@ -74,7 +79,7 @@ nav ul li a {
   nav ul {
     display: none;
     position: absolute;
-    top: 56px;
+    top: 51px;
     right: 0;
     width: 250px;
     background-color: var(--dark-gunmetal);
@@ -98,4 +103,35 @@ nav ul li a {
   nav ul li a {
     padding: 0 20px;
   }
+}
+.hero {
+  padding: 75px 0 0 0;
+  background-color: var(--platinum);
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 100px;
+}
+.hero div h1 {
+  font-size: 40px;
+}
+.hero div p {
+  line-height: 1.5;
+  color: var(--gray);
+}
+.hero div a {
+  display: block;
+  width: fit-content;
+  margin-top: 25px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  color: var(--black);
+  border: 1px solid var(--dark-gunmetal);
+}
+.hero div a:hover {
+  color: var(--white);
+  background-color: var(--dark-gunmetal);
 }
