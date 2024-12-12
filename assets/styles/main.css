@@ -146,11 +146,14 @@ nav ul li a {
     text-align: center;
   }
 }
-.about .container {
+.about .container,
+.services .services-list,
+.blog .cards,
+footer .contact {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 40px;
 }
 .about h2 {
   font-size: 35px;
@@ -184,12 +187,6 @@ nav ul li a {
   line-height: 1.5;
   color: var(--gray);
 }
-.services .services-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-}
 .services-list .service {
   width: 300px;
   padding: 25px;
@@ -204,15 +201,13 @@ nav ul li a {
   line-height: 1.5;
   color: var(--light-silver);
 }
-.blog .container h2 {
+.blog .container h2,
+footer .container h2 {
   text-align: center;
   font-size: 35px;
 }
-.blog .cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+.blog .cards,
+footer .contact {
   margin-top: 25px;
 }
 .cards .card {
@@ -228,9 +223,66 @@ nav ul li a {
   height: 100%;
   border-radius: 8px;
 }
-.card h3 {
+.card h3,
+.contact form h3 {
   margin-bottom: 20px;
 }
 .card p {
   line-height: 1.3;
+}
+footer {
+  background-color: var(--platinum);
+}
+footer .container {
+  padding: 75px 0;
+}
+form input[type="email"],
+form input[type="text"] {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: var(--dark-gunmetal);
+}
+form input[type="email"]::placeholder,
+form input[type="text"]::placeholder,
+form textarea::placeholder {
+  font-size: 17px;
+  color: var(--light-silver);
+}
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 25px 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: var(--dark-gunmetal);
+}
+form input[type="submit"] {
+  display: block;
+  margin: 15px 0 0 auto;
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: var(--black);
+  border: none;
+}
+.container .social h3 {
+  margin-bottom: 25px;
+}
+.container .social ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  color: var(--black);
+}
+footer p {
+  text-align: center;
+  padding: 25px 0;
+  color: var(--white);
+  background-color: var(--dark-gunmetal);
 }
