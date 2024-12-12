@@ -135,3 +135,35 @@ nav ul li a {
   color: var(--white);
   background-color: var(--dark-gunmetal);
 }
+.about {
+  padding: 75px 0;
+}
+@media (max-width:627px) {
+  .about {
+    text-align: center;
+  }
+}
+.about .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.about h2 {
+  font-size: 35px;
+}
+.about p {
+  line-height: 1.5;
+}
+.about a {
+  display: inline-block;
+  margin: 25px 10px 0 0;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: 1px solid var(--dark-gunmetal);
+  color: var(--black);
+}
+.about a:hover {
+  color: white;
+  background-color: var(--dark-gunmetal);
+}
