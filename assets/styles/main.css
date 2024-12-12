@@ -7,6 +7,7 @@
   --white: #ffffff;
   --dark-gunmetal: #212529;
   --platinum: #dee2e6;
+  --light-silver: #dbd6d6;
   --gray: #808080;
   --black: #000000;
 }
@@ -135,10 +136,11 @@ nav ul li a {
   color: var(--white);
   background-color: var(--dark-gunmetal);
 }
-.about {
+.about,
+.services {
   padding: 75px 0;
 }
-@media (max-width:627px) {
+@media (max-width: 627px) {
   .about {
     text-align: center;
   }
@@ -166,4 +168,38 @@ nav ul li a {
 .about a:hover {
   color: white;
   background-color: var(--dark-gunmetal);
+}
+.services {
+  text-align: center;
+  background-color: var(--platinum);
+}
+.services .container .title {
+  margin-bottom: 20px;
+}
+.title h2 {
+  font-size: 35px;
+}
+.title p {
+  line-height: 1.5;
+  color: var(--gray);
+}
+.services .services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.services-list .service {
+  width: 300px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: var(--dark-gunmetal);
+}
+.service h3 {
+  margin: 20px 0;
+  color: var(--white);
+}
+.service p {
+  line-height: 1.5;
+  color: var(--light-silver);
 }
